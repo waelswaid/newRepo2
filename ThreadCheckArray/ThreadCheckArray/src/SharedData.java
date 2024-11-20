@@ -21,8 +21,9 @@ public class SharedData
     public SharedData(ArrayList<Integer> array, int b) {
         this.array = array;
         this.b = b;
+        
     }
-
+    
     /**
      * Returns the win array.
      * 
