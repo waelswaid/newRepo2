@@ -5,7 +5,7 @@ public class ThreadCheckArray implements Runnable
 	SharedData sd;
 	private ArrayList<Integer>array = new ArrayList<>();
 	int b;
-	
+	//hi my name is nahla from VS
 	public ThreadCheckArray(SharedData sd) 
 	{
 		this.sd = sd;	
