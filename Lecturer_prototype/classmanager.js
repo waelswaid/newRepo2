@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('loading-indicator').remove();
         renderClasses(data.classes);
         
-        // ✅ Skip filter setup for now
-        // setupFilters(data.classes);
+      
       })
       .catch(error => {
         console.error('Error loading class data:', error);
@@ -77,7 +76,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const averageBar = classCard.querySelector('.exam-average-bar');
       averageBar.style.width = `${classData.examAverage}%`;
       averageBar.classList.add(`bg-${getGradeColor(classData.examAverage)}-500`);
-  
+      
+
       container.appendChild(classCard);
     });
   }
@@ -89,10 +89,10 @@ document.addEventListener('DOMContentLoaded', function() {
   
   function getSubjectColor(subject) {
     const colors = {
-      'Mathematics': 'indigo',
+      'Mathematics': 'orange',
       'Physics': 'purple',
-      'Computer Science': 'emerald',
-      'Statistics': 'orange'
+      'Computer Science': 'blue',
+      
     };
     return colors[subject] || 'gray';
   }
