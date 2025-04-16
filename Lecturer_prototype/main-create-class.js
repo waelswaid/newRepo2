@@ -24,11 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
       subjectSelect.classList.remove("border-red-500", "bg-red-50", "dark:bg-red-900");
     });
   
-    // Theme toggle
-    themeBtn.addEventListener("click", () => {
-      document.documentElement.classList.toggle("dark");
-      themeBtn.textContent = document.documentElement.classList.contains("dark") ? "Light" : "Dark";
-    });
   
     // Function to reset the form
     function resetForm() {
@@ -121,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function() {
           const incomplete = window.manualExam.questions.some(q => !window.manualExam.validateQuestion(q));
           if (incomplete) {
             alert("Please complete all exam questions before creating the class.");
-            return; // Stop form submission
+            return; // 
           }
         }
       }
